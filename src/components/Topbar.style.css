@@ -1,0 +1,104 @@
+.topbar-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "1 2 3";
+    color: var(--c6);
+    text-align: center;
+    height: fit-content;
+}
+
+/* .topbar-container::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 7vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    z-index: -1;
+} */
+
+#AppLogoName{
+    width: 50vw;
+    text-align: left;
+    margin: auto 0%;
+}
+
+.topbar-account{
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-links {
+    list-style-type: none;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-button{
+    display: none;
+}
+
+.t-tab-link {
+    color: var(--c1);
+    padding: 3px 7px;
+    background: var(--c6);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.t-tab-link:hover {
+    box-shadow: 5px 5px 17px #000;
+}
+
+@media only screen and (max-width: 624px) {
+    .topbar-container{
+        padding: 0%;
+    }
+    #AppLogoName{
+        width: 20%;
+        text-align: left;
+        margin: 0%;
+    }
+
+    .topbar-links {
+        grid-area: 2/1;
+        grid-column-end: 4;
+        flex-direction: column;
+        padding: 0%;
+        height: fit-content;
+    }
+    
+    .menu-button{
+        display: block;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        color: var(--c6);
+        background: transparent;
+        border: none;
+        height: fit-content;
+        width: fit-content;
+        padding: 0%;
+    }
+
+    .menu-button-active{
+        background-color: var(--c6);
+        color: var(--c7);
+    }
+
+    .topbar-account {
+        grid-area: 1/2;
+        text-align: center;
+    }
+
+    .t-tab-link {
+        width: 100%;
+        border-radius: 0px;
+        margin: 1px 0px;
+        padding: 3px 0px;
+        background: var(--c6);
+    }
+}

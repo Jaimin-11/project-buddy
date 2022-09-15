@@ -1,0 +1,35 @@
+:root{
+  --c1: #670199;
+  /* --c2: #F99E4C; */
+  --c2: #e8b8ff;
+  --c3: #F36F38;
+  --c4: #EF4648;
+  --c5: #582841;
+  --c6: #fff;
+  --c7: #000;
+}
+html{
+  height: 100%;
+}
+#root{
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: linear-gradient(180deg, var(--c3), var(--c1)); */
+  background: linear-gradient(180deg, #670199, #1c0226);
+  background-repeat: no-repeat;
+}
+
+a{
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

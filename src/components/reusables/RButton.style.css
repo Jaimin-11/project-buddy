@@ -1,0 +1,8 @@
+.r-button{
+    border-radius: 10px;
+    background: var(--c5);
+    border: none;
+    color: var(--c6);
+    padding: 5px 10px;
+    font-family: "Roboto Mono", monospace;
+}
